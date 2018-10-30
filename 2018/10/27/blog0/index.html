@@ -120,7 +120,7 @@
 
 
 
-  <title>LeetCode 15 Three Sum | Hexo</title>
+  <title>第一天 | Hexo</title>
   
 
 
@@ -237,7 +237,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://coreybiao.github.io/2018/10/30/Three-Sum/">
+    <link itemprop="mainEntityOfPage" href="https://coreybiao.github.io/2018/10/27/Blog0/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Corey">
@@ -254,7 +254,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode 15 Three Sum</h1>
+          <h1 class="post-title" itemprop="name headline">第一天</h1>
         
 
         <div class="post-meta">
@@ -266,7 +266,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-30T19:21:32+08:00">2018-10-30</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-27T17:37:05+08:00">2018-10-27</time>
             
 
             
@@ -302,18 +302,7 @@
       
 
       
-        <h1 id="LeetCode-15：三数和为0-的非重复三元组"><a href="#LeetCode-15：三数和为0-的非重复三元组" class="headerlink" title="LeetCode 15：三数和为0 的非重复三元组 "></a><strong>LeetCode 15：三数和为0 的非重复三元组 </strong></h1><hr>
-<p>##+ 求解思路</p>
-<ul>
-<li>对原数组nums进行排序;</li>
-<li>对于<strong>加入</strong>的数三元组第一个数sums[i]，其已经包括所有可能(三元组第一个为sums[i]);</li>
-<li>三元组第二个数sum[j]，同上.<br><strong><em>必须确定sum[j]已经被在之前已经完全计算过！ </em></strong></li>
-</ul>
-<hr>
-<p>##+ C++源码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    int start, end, mid;</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; :: iterator it;</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; threeSum(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">       </span><br><span class="line">    sort(nums.begin(), nums.end());</span><br><span class="line">    vector&lt;int&gt; three;</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; threesum;</span><br><span class="line">        </span><br><span class="line">    int i=0, j=0, k=0, size = nums.size();</span><br><span class="line">        </span><br><span class="line">    for(i=0; i&lt;size; i++)&#123;</span><br><span class="line">        if(nums[i]&gt;0 || (nums[i] == nums[i-1] &amp; i&gt;0))</span><br><span class="line">            continue;</span><br><span class="line">        for(j=i+1; j&lt;size; j++)&#123;</span><br><span class="line">            if(nums[i]+nums[j]&gt;0)</span><br><span class="line">                break;</span><br><span class="line">            if(nums[j]==nums[j-1] &amp;j-1 != i)     // 判断nums[j]是被全部计算过</span><br><span class="line">                continue;</span><br><span class="line">            start = j+1; end = nums.size()-1; mid = (start+end)/2;</span><br><span class="line">            int target = 0-nums[i]-nums[j];</span><br><span class="line">            while(start&lt;=end)&#123;</span><br><span class="line">                if(nums[mid]==target)&#123;</span><br><span class="line">                    three.push_back(nums[i]);</span><br><span class="line">                    three.push_back(nums[j]);</span><br><span class="line">                    three.push_back(target);</span><br><span class="line">                    threesum.push_back(three);</span><br><span class="line">                    three.clear();</span><br><span class="line">                    break;</span><br><span class="line">                &#125;   </span><br><span class="line">                else if(nums[mid]&gt;target)&#123;</span><br><span class="line">                    end = mid-1;</span><br><span class="line">                    mid = (end+start)/2;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    start = mid+1;</span><br><span class="line">                    mid = (end+start)/2;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">    return  threesum; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>##+ 易错测试用例<br>[0,0,0] and [0,0,0,0]</p>
-
+        
       
     </div>
     
@@ -330,7 +319,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
+            <a href="/tags/日记/" rel="tag"># 日记</a>
           
         </div>
       
@@ -343,8 +332,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/27/First Day/" rel="next" title="第一天">
-                <i class="fa fa-chevron-left"></i> 第一天
+              <a href="/2018/10/27/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -352,6 +341,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/27/First Day/" rel="prev" title="第一天">
+                第一天 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -403,17 +396,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -464,22 +448,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LeetCode-15：三数和为0-的非重复三元组"><span class="nav-number">1.</span> <span class="nav-text">LeetCode 15：三数和为0 的非重复三元组 </span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
