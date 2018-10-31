@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[NexT Setings]]></title>
+    <url>%2F2018%2F10%2F31%2FNexT-Setings%2F</url>
+    <content type="text"><![CDATA[使用到的NexT配置中的基配置MarkDown超链接语法：[超链接名](超链接地址 “超链接title”)示例：[百度](http://baidu.com) 效果： 百度 其余方式，Everett_Lao在其简书博客上中有详细介绍。 文章加密访问文章的加密方法可参见CSDN中的一片讲解[博客][pswd]。[pswd]: https://blog.csdn.net/Lancelot_Lewis/article/details/53422901]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[How Propagation Probability Influence IM Problems]]></title>
     <url>%2F2018%2F10%2F31%2FPropagation%20Prabability%20in%20IM%2F</url>
     <content type="text"><![CDATA[问题引出一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。但是在两个不同的传播概率方法的设置下，影响力节点相差很多！ 计算方式现如今，可以考虑以下几种计算方法来和随机复制法相比较： 基于节点重要度(PageRank) 基于节点相似度(SimRank) 注意： 当和随机赋值方法进行对比是，务必使的随机赋值和以上两种方法计算得出的传播概率的平均值一直，如此才有对比性可言！]]></content>
