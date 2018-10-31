@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Test]]></title>
+    <url>%2F2018%2F10%2F31%2FTest%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode 15 Three Sum]]></title>
+    <url>%2F2018%2F10%2F30%2FThree-Sum%2F</url>
+    <content type="text"><![CDATA[LeetCode 15：三数和为0 的非重复三元组 求解思路 对原数组nums进行排序; 对于加入的数三元组第一个数sums[i]，其已经包括所有可能(三元组第一个为sums[i]); 三元组第二个数sum[j]，同上.必须确定sum[j]已经被在之前已经完全计算过！ C++源码123456789101112131415161718192021222324252627282930313233343536373839404142434445class Solution &#123;public: vector&lt;vector&lt;int&gt;&gt; threeSum(vector&lt;int&gt;&amp; nums) &#123; vector&lt;int&gt; three; vector&lt;vector&lt;int&gt;&gt; threesum; sort(nums.begin(), nums.end()); //排序 int i=0, j=0, k=0, size = nums.size(); int start, end, mid; for(i=0; i&lt;size; i++)&#123; if(nums[i]&gt;0 || (nums[i] == nums[i-1] &amp; i&gt;0)) continue; for(j=i+1; j&lt;size; j++)&#123; if(nums[i]+nums[j]&gt;0) break; if(nums[j]==nums[j-1] &amp;j-1 != i) //如果j-1=i，说明j是第一次循环，不应停止。 continue; start = j+1; end = nums.size()-1; mid = (start+end)/2; int target = 0-nums[i]-nums[j]; while(start&lt;=end)&#123; if(nums[mid]==target)&#123; three.push_back(nums[i]); three.push_back(nums[j]); three.push_back(target); threesum.push_back(three); three.clear(); break; &#125; else if(nums[mid]&gt;target)&#123; end = mid-1; mid = (end+start)/2; &#125; else&#123; start = mid+1; mid = (end+start)/2; &#125; &#125; &#125; &#125; return threesum; &#125;&#125;; 易错测试用例[0,0,0] and [0,0,0,0]]]></content>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[第一天]]></title>
+    <url>%2F2018%2F10%2F27%2FFirst%20Day%2F</url>
+    <content type="text"><![CDATA[2018-10-30 晴转阴 (阴冷)两天前，应该是吧，配置了自己的专属Blog。很是感谢北邮的那位大神，你的博客做的很棒！配置完成以后，已是晚上七点多，距开始配置已经过了四个多小时。中间遇到一些问题，但是感谢万能的互联网，一个个的全部解决。虽然配置完成，但是对于MarkDown语法并不了解，所以只是简单的做了一个First Day.md文件以来进行测试，并没有写入内容。今日，在写毕设之余，在LeetCode上补充、优化之前的three sum问题，而后上传博客。看到First day.md文件空空，于是填写补充。 写于 图书馆 5楼 C区 048号]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F10%2F27%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+</search>
