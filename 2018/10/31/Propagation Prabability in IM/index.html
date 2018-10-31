@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="IM,PaperIdeas,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="斩尽杀绝，这是对一文明的最高重视。">
+<meta name="description" content="问题引出一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。但是在两个不同的传播概率方法的设置下，影响力节点相差很多！  计算方式现如今，可以考虑以下几种计算方法来和随机复制法">
+<meta name="keywords" content="IM,PaperIdeas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Test">
-<meta property="og:url" content="https://coreybiao.github.io/2018/10/31/Test/index.html">
+<meta property="og:title" content="How Propagation Probability Influence IM Problems">
+<meta property="og:url" content="https://coreybiao.github.io/2018/10/31/Propagation Prabability in IM/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="斩尽杀绝，这是对一文明的最高重视。">
+<meta property="og:description" content="问题引出一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。但是在两个不同的传播概率方法的设置下，影响力节点相差很多！  计算方式现如今，可以考虑以下几种计算方法来和随机复制法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-31T04:57:52.026Z">
+<meta property="og:updated_time" content="2018-10-31T07:00:46.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Test">
-<meta name="twitter:description" content="斩尽杀绝，这是对一文明的最高重视。">
+<meta name="twitter:title" content="How Propagation Probability Influence IM Problems">
+<meta name="twitter:description" content="问题引出一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。但是在两个不同的传播概率方法的设置下，影响力节点相差很多！  计算方式现如今，可以考虑以下几种计算方法来和随机复制法">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://coreybiao.github.io/2018/10/31/Test/">
+  <link rel="canonical" href="https://coreybiao.github.io/2018/10/31/Propagation Prabability in IM/">
 
 
 
 
 
-  <title>Test | Hexo</title>
+  <title>How Propagation Probability Influence IM Problems | Hexo</title>
   
 
 
@@ -274,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://coreybiao.github.io/2018/10/31/Test/">
+    <link itemprop="mainEntityOfPage" href="https://coreybiao.github.io/2018/10/31/Propagation Prabability in IM/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Corey">
@@ -291,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Test</h1>
+          <h1 class="post-title" itemprop="name headline">How Propagation Probability Influence IM Problems</h1>
         
 
         <div class="post-meta">
@@ -322,8 +323,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/31/Test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/31/Test/" itemprop="commentCount"></span>
+                <a href="/2018/10/31/Propagation Prabability in IM/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/31/Propagation Prabability in IM/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -351,7 +352,15 @@
       
 
       
-        
+        <h2 id="问题引出"><a href="#问题引出" class="headerlink" title="问题引出"></a>问题引出</h2><font face="Times New Romam"><br>一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。<br><br>比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。<br>但是在两个不同的传播概率方法的设置下，影响力节点相差很多！<br><br></font>
+
+<h2 id="计算方式"><a href="#计算方式" class="headerlink" title="计算方式"></a>计算方式</h2><p>现如今，可以考虑以下几种计算方法来和随机复制法相比较：</p>
+<ul>
+<li>基于节点重要度(PageRank)</li>
+<li>基于节点相似度(SimRank)</li>
+</ul>
+<p><strong>注意：</strong> 当和随机赋值方法进行对比是，务必使的随机赋值和以上两种方法计算得出的传播概率的平均值一直，如此才有对比性可言！</p>
+
       
     </div>
     
@@ -373,6 +382,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IM/" rel="tag"># IM</a>
+          
+            <a href="/tags/PaperIdeas/" rel="tag"># PaperIdeas</a>
+          
+        </div>
       
 
       
@@ -479,8 +496,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -510,7 +536,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -535,6 +561,18 @@ var jiathis_config={
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://www.douban.com/people/162301669/" target="_blank" title="豆瓣">
+                      
+                        <i class="fa fa-fw fa-douban"></i>豆瓣</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://iissnan.com/progit/" target="_blank" title="ProGit">
+                      
+                        <i class="fa fa-fw fa-globe"></i>ProGit</a>
+                  </span>
+                
             </div>
           
 
@@ -549,6 +587,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题引出"><span class="nav-number">1.</span> <span class="nav-text">问题引出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算方式"><span class="nav-number">2.</span> <span class="nav-text">计算方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -728,9 +782,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://coreybiao.github.io/2018/10/31/Test/';
-          this.page.identifier = '2018/10/31/Test/';
-          this.page.title = 'Test';
+          this.page.url = 'https://coreybiao.github.io/2018/10/31/Propagation Prabability in IM/';
+          this.page.identifier = '2018/10/31/Propagation Prabability in IM/';
+          this.page.title = 'How Propagation Probability Influence IM Problems';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://corey.disqus.com/embed.js';
