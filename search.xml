@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[NexT Setings]]></title>
     <url>%2F2018%2F10%2F31%2FNexT-Setings%2F</url>
-    <content type="text"><![CDATA[使用到的NexT配置中的基配置MD超链接语法：[超链接名](超链接地址 “超链接title”)示例：[百度](http://baidu.com) 效果： 百度 Everett_Lao在其简书博客上中有详细介绍 其余方式。 文章加密找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。按道理是添加在任何地方都行，但是推荐加在所有的. 12345678910&lt;script&gt; (function()&#123; if('&#123;&#123; page.password &#125;&#125;')&#123; if (prompt('请输入文章密码') !== '&#123;&#123; page.password &#125;&#125;')&#123; alert('密码错误！'); history.back(); &#125; &#125; &#125;)();&lt;/script&gt; 文章的加密方法可参见在CSDN中的一篇讲解 博客 。 显示方面 字数统计字数统计和显示时间，可参见 博客 . 显示长短在首页显示中的文章默认显示太多，在 博客 中友详细的解释，其中也涉及到了文章的更新时间的设置。 更新时间详见 2 中的介绍。]]></content>
+    <content type="text"><![CDATA[使用到的NexT配置中的基配置MD超链接语法：[超链接名](超链接地址 “超链接title”)示例：[百度](http://baidu.com) 效果： 百度 Everett_Lao在其简书博客上中有详细介绍 其余方式。 文章加密找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。按道理是添加在任何地方都行，但是推荐加在所有的. 12345678910&lt;script&gt; (function()&#123; if('&#123;&#123; page.password &#125;&#125;')&#123; if (prompt('请输入文章密码') !== '&#123;&#123; page.password &#125;&#125;')&#123; alert('密码错误！'); history.back(); &#125; &#125; &#125;)();&lt;/script&gt; 文章的加密方法可参见在CSDN中的一篇讲解 博客 。 显示方面 字数统计字数统计和显示时间，可参见 博客 . 显示长短在首页显示中的文章默认显示太多，在 博客 中友详细的解释，其中也涉及到了文章的更新时间的设置。 更新时间详见 2 中的介绍。 分类页面首先在根目录执行：hexo new page categories ,然后在next主题配置文件_config.yml中所搜menu，将其下的 “#categories: /categories/ || th” 前面的”#”去掉即可。]]></content>
       <categories>
         <category>Blog Settings</category>
       </categories>
