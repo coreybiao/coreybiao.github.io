@@ -4,6 +4,9 @@
     <title><![CDATA[NexT Setings]]></title>
     <url>%2F2018%2F10%2F31%2FNexT-Setings%2F</url>
     <content type="text"><![CDATA[使用到的NexT配置中的基配置MD超链接语法：[超链接名](超链接地址 “超链接title”)示例：[百度](http://baidu.com) 效果： 百度 Everett_Lao在其简书博客上中有详细介绍 其余方式。 文章加密找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。按道理是添加在任何地方都行，但是推荐加在所有的. 12345678910&lt;script&gt; (function()&#123; if('&#123;&#123; page.password &#125;&#125;')&#123; if (prompt('请输入文章密码') !== '&#123;&#123; page.password &#125;&#125;')&#123; alert('密码错误！'); history.back(); &#125; &#125; &#125;)();&lt;/script&gt; 文章的加密方法可参见在CSDN中的一篇讲解 博客 。 显示方面 字数统计字数统计和显示时间，可参见 博客 . 显示长短在首页显示中的文章默认显示太多，在 博客 中友详细的解释，其中也涉及到了文章的更新时间的设置。 更新时间详见 2 中的介绍。]]></content>
+      <categories>
+        <category>Blog Settings</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>NexT</tag>
@@ -13,6 +16,9 @@
     <title><![CDATA[How Propagation Probability Influence IM Problems]]></title>
     <url>%2F2018%2F10%2F31%2FPropagation%20Prabability%20in%20IM%2F</url>
     <content type="text"><![CDATA[问题引出一般的，传播概率的计算方法比较简单，一般都是直接赋值即可。但是在实验中发现，传播概率的设置对于IM算法可以激活节点的个数至关重要。比如，第一种方式通过某种来计算传播概率(PageRank为例)，第二种在第一种的基础上随机复制，需要注意的是在两种网络中的传播概率平均值完全相同。但是在两个不同的传播概率方法的设置下，影响力节点相差很多！ 计算方式现如今，可以考虑以下几种计算方法来和随机复制法相比较： 基于节点重要度(PageRank) 基于节点相似度(SimRank) 注意： 当和随机赋值方法进行对比是，务必使的随机赋值和以上两种方法计算得出的传播概率的平均值一直，如此才有对比性可言！]]></content>
+      <categories>
+        <category>Researches</category>
+      </categories>
       <tags>
         <tag>IM</tag>
         <tag>PaperIdeas</tag>
@@ -22,14 +28,22 @@
     <title><![CDATA[LeetCode 15 Three Sum]]></title>
     <url>%2F2018%2F10%2F30%2FThree-Sum%2F</url>
     <content type="text"><![CDATA[LeetCode 15：三数和为0 的非重复三元组 求解思路 对原数组nums进行排序; 对于加入的数三元组第一个数sums[i]，其已经包括所有可能(三元组第一个为sums[i]); 三元组第二个数sum[j]，同上.必须确定sum[j]已经被在之前已经完全计算过！ C++源码123456789101112131415161718192021222324252627282930313233343536373839404142434445class Solution &#123;public: vector&lt;vector&lt;int&gt;&gt; threeSum(vector&lt;int&gt;&amp; nums) &#123; vector&lt;int&gt; three; vector&lt;vector&lt;int&gt;&gt; threesum; sort(nums.begin(), nums.end()); //排序 int i=0, j=0, k=0, size = nums.size(); int start, end, mid; for(i=0; i&lt;size; i++)&#123; if(nums[i]&gt;0 || (nums[i] == nums[i-1] &amp; i&gt;0)) continue; for(j=i+1; j&lt;size; j++)&#123; if(nums[i]+nums[j]&gt;0) break; if(nums[j]==nums[j-1] &amp;j-1 != i) //如果j-1=i，说明j是第一次循环，不应停止。 continue; start = j+1; end = nums.size()-1; mid = (start+end)/2; int target = 0-nums[i]-nums[j]; while(start&lt;=end)&#123; if(nums[mid]==target)&#123; three.push_back(nums[i]); three.push_back(nums[j]); three.push_back(target); threesum.push_back(three); three.clear(); break; &#125; else if(nums[mid]&gt;target)&#123; end = mid-1; mid = (end+start)/2; &#125; else&#123; start = mid+1; mid = (end+start)/2; &#125; &#125; &#125; &#125; return threesum; &#125;&#125;; 易错测试用例[0,0,0] and [0,0,0,0]]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
       <tags>
         <tag>LeetCode</tag>
+        <tag>Array</tag>
+        <tag>Binary Search</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[第一天]]></title>
+    <title><![CDATA[First Diary]]></title>
     <url>%2F2018%2F10%2F27%2FFirst%20Day%2F</url>
     <content type="text"><![CDATA[2018-10-30 晴转阴 (阴冷)两天前，应该是吧，配置了自己的专属Blog。很是感谢北邮的那位大神，你的博客做的很棒！配置完成以后，已是晚上七点多，距开始配置已经过了四个多小时。中间遇到一些问题，但是感谢万能的互联网，一个个的全部解决。虽然配置完成，但是对于MarkDown语法并不了解，所以只是简单的做了一个First Day.md文件以来进行测试，并没有写入内容。今日，在写毕设之余，在LeetCode上补充、优化之前的three sum问题，而后上传博客。看到First day.md文件空空，于是填写补充。 写于 图书馆 5楼 C区 048号]]></content>
+      <categories>
+        <category>Diaries</category>
+      </categories>
       <tags>
         <tag>日记</tag>
       </tags>
@@ -38,8 +52,11 @@
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F10%2F27%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Blog Settings</category>
+      </categories>
       <tags>
-        <tag>日记</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
