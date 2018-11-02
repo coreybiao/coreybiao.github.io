@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Researcher Page]]></title>
+    <url>%2F2018%2F11%2F02%2FResearcher-Page%2F</url>
+    <content type="text"><![CDATA[关注的牛人主页图数据库方向 成电 张东翔 教授. 北航 樊文飞 教授. SUT Pro Chenfei Liu. 顶级数据库(挖掘)会议 VLDB: Very Large Data Bases SIGMOD: The ACM Special Interest Group on Management of Data ICDE: International Conference on Data Engineering SIGKDD: ACM Special Interest Group on Knowledge Discovery and Data Mining SIGIR: International Conference on Research and Development in Information Retrieval 顶级数据(挖掘)库期刊 VLDBJ: VLDB Journal TKDE: IEEE Transaction on Knowledge and Data Ingeneering TODS: ACM Transactions on Database Systems TOIS: ACM Transactions on Information Systems]]></content>
+      <categories>
+        <category>Researches</category>
+      </categories>
+      <tags>
+        <tag>HomePage</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Doctoral Application]]></title>
     <url>%2F2018%2F11%2F01%2FDoctoral-Application%2F</url>
-    <content type="text"><![CDATA[今天晚上，完成了博士报考。接下来，写毕业论文，计算机学报，填写报考材料。所有的这些都在这两三周内，事儿有点多。]]></content>
+    <content type="text"><![CDATA[今天晚上，完成了博士报考。接下来，写毕业论文，计算机学报，填写报考材料。所有的这些都在这两三周内，事儿有点多。加油！]]></content>
       <categories>
         <category>Diaries</category>
       </categories>
