@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Websites Record]]></title>
+    <url>%2F2018%2F11%2F02%2FWebsites-Record%2F</url>
+    <content type="text"><![CDATA[个人常用网址算法练习 LeetCode： Problems C语言语法：C++ 论文查找 论文检索：dblp SCI索引入口：SCI EI索引入口 ：EI 实验数据 数据下载：SLNDC]]></content>
+      <categories>
+        <category>Researchs</category>
+      </categories>
+      <tags>
+        <tag>常用网址</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Researcher Page]]></title>
     <url>%2F2018%2F11%2F02%2FResearcher-Page%2F</url>
-    <content type="text"><![CDATA[关注的牛人主页图数据库方向 成电 张东翔 教授. 北航 樊文飞 教授. SUT Pro Chenfei Liu. 顶级数据库(挖掘)会议 VLDB: Very Large Data Bases SIGMOD: The ACM Special Interest Group on Management of Data ICDE: International Conference on Data Engineering SIGKDD: ACM Special Interest Group on Knowledge Discovery and Data Mining SIGIR: International Conference on Research and Development in Information Retrieval 顶级数据(挖掘)库期刊 VLDBJ: VLDB Journal TKDE: IEEE Transaction on Knowledge and Data Ingeneering TODS: ACM Transactions on Database Systems TOIS: ACM Transactions on Information Systems 人工智能会议 AAAI: AAAI Conference on Artificial Intelligence ICML: International Conference on Machine Learning IJCAI: International Joint Conference on Artificial Intelligence NIPS: Neural Information Processing Systems ACL: Meeting of the Association for Computational Linguistics 人工智能期刊 AI: Artificial Intelligence TPAMI IEEE Transactions on Pattern Analysis and Machine Intelligence JMLR: Journal of Machine Learning Research]]></content>
+    <content type="text"><![CDATA[一、关注的牛人主页 图数据库方向 成电 张东祥 教授. 北航 樊文飞 教授. SUT Chenfei Liu. 二、会议期刊主页(CCF) 数据库、数据挖掘 顶级数据库(挖掘)会议 VLDB: Very Large Data Bases SIGMOD: The ACM Special Interest Group on Management of Data ICDE: International Conference on Data Engineering SIGKDD: ACM Special Interest Group on Knowledge Discovery and Data Mining SIGIR: International Conference on Research and Development in Information Retrieval 顶级数据(挖掘)库期刊 VLDBJ: VLDB Journal TKDE: IEEE Transaction on Knowledge and Data Ingeneering TODS: ACM Transactions on Database Systems TOIS: ACM Transactions on Information Systems 人工智能 人工智能会议 AAAI: AAAI Conference on Artificial Intelligence ICML: International Conference on Machine Learning IJCAI: International Joint Conference on Artificial Intelligence NIPS: Neural Information Processing Systems ACL: Meeting of the Association for Computational Linguistics 人工智能期刊 AI: Artificial Intelligence TPAMI IEEE Transactions on Pattern Analysis and Machine Intelligence JMLR: Journal of Machine Learning Research]]></content>
       <categories>
         <category>Researches</category>
       </categories>
